@@ -59,8 +59,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-st.title("📊 Marketing AI")
-st.write("Aplicación web para análisis de ventas y clustering de clientes.")
+
 
 uploaded_file = st.file_uploader("Sube un archivo CSV", type=["csv"])
 
@@ -141,10 +140,10 @@ scaled_data = scaler.fit_transform(numeric_df)
 # -----------------------------
 # MENÚ DE GRÁFICOS
 # -----------------------------
-st.sidebar.title("Menú de visualizaciones")
+
 
 opcion = st.sidebar.selectbox(
-    "Selecciona el gráfico que quieres mostrar",
+    "Selecciona",
     [
         "Distribución por país",
         "Distribución por estado",
